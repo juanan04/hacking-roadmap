@@ -4,6 +4,16 @@ Bienvenido/a a mi repositorio de **Hacking Ético**, donde documento todo lo que
 
 ---
 
+> ⚠️ **Descargo de responsabilidad**
+> 
+> Este repositorio tiene fines **educativos y personales** únicamente.
+> Toda la información contenida aquí está orientada al **aprendizaje de hacking ético**, ciberseguridad y prácticas legales de auditoría.
+> 
+> **NO me hago responsable** del uso indebido de los conocimientos compartidos.  
+> El objetivo es documentar lo que voy aprendiendo como estudiante/apasionado de la seguridad informática.
+
+---
+
 ## 📌 Contenido
 
 
