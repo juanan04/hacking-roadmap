@@ -1,4 +1,4 @@
-# Crear tu propio diccionario
+# Crear tu propio diccionario (usando espacio en el disco)
 
 ---
 
@@ -19,4 +19,14 @@ crunch [min] [max] [caracteres] -t [patron] -o [nombrearchivo]
 
 ```
 crunch 6 6 abc123 -t a@@@@c -o diccionario01
+```
+
+---
+---
+
+# Crear tu propio diccionario (sin usar espacio en el disco)
+
+Haremos uso nuevamente del comando `crunch`.
+```
+crunch 8 8 | aircrack-ng -w - -b <bssidRouter> <nombreArchivo>.cap
 ```
