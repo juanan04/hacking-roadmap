@@ -20,8 +20,6 @@ crunch [min] [max] [caracteres] -t [patron] -o [nombrearchivo]
 ```
 crunch 6 6 abc123 -t a@@@@c -o diccionario01
 ```
-
----
 ---
 
 # Crear tu propio diccionario (sin usar espacio en el disco)
@@ -29,4 +27,19 @@ crunch 6 6 abc123 -t a@@@@c -o diccionario01
 Haremos uso nuevamente del comando `crunch`.
 ```
 crunch 8 8 | aircrack-ng -w - -b <bssidRouter> <nombreArchivo>.cap
+```
+
+---
+
+# Como guardar progreso de un ataque de diccionario
+
+Vamos a utilizar una mezcla de todo lo visto anteriormente para poder llevar a cabo dicho cometido. Empezamos con el comando `crunch`
+El comando completo sería el siguiente:
+```
+crunch 8 8 | john --stdin --session=<nombreSession> --stdout | aircrack-ng -w - -b <bssidRouter> <nombreArchivo>.cap
+```
+
+Una vez ejecutado podremos pausarlo cuando querramos con `Ctrl+C`. Y para resumirlo tendremos que ejecutar lo siguiente en consola:
+```
+crunch 8 8 | john --restore=<nombreSession> | aircrack-ng -w - -b <bssidRouter> <nombreArchivo>.cap
 ```
