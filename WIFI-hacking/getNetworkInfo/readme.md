@@ -4,7 +4,8 @@
 ---
 
 ## Herramientas a ver
--
+- [netdiscover](/netdiscover)
+- [Zenmap](/zenmap)
 
 ---
 
