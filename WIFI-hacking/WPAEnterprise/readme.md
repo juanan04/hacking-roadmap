@@ -16,7 +16,7 @@
 hostapd-wpe /etc/hostapd-wpe/hostapd-wpe.conf
 ```
 5. Ahora, cuando un usuario intente conectarse recibiremos por consola la siguiente información: un **username**, un **challenge** y un **response**. Estos 2 últimos nos ayudará a descifrar la password.
-6. Para crackear la password haciendo uso del challenge y el response, haremos uso del programa llamado `asleap` mas un diccionario. Para saber más sobre el uso de diccionarios hecha un vistazo al directorio de [wordlists](../../../wordlists).
+6. Para crackear la password haciendo uso del challenge y el response, haremos uso del programa llamado `asleap` mas un diccionario. Para saber más sobre el uso de diccionarios hecha un vistazo al directorio de [wordlists](/wordlists).
 7. Una vez ya con nuestro diccionario, challenge y response; procederemos a ejecutar el siguinte comando para realizar el ataque de fuerza bruta.
 ```
 asleap -C <challenge> -R <response> -W <diccionario>
