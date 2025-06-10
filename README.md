@@ -16,6 +16,8 @@ Bienvenido/a a mi repositorio de **Hacking Ético**, donde documento todo lo que
 
 ## 📌 Contenido
 
+- Contenido y herramientas necesarias para [WiFi-hacking](WIFI-hacking)
+- Creación de [diccionarios/wordlists y ejemplos](wordlists)
 
 
 ---
